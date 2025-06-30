@@ -1,0 +1,23 @@
+{
+    "name": "qa-automation-assignment",
+    "version": "1.0.0",
+    "scripts": {
+      "test": "jest --runInBand",
+      "test:api": "jest tests/api/",
+      "test:logs": "jest tests/log-analyzer.test.js",
+      "test:security": "jest tests/api/security.test.js",
+      "test:performance": "jest tests/api/performance.test.js",
+      "lint": "eslint .",
+      "format": "prettier --write ."
+    },
+    "dependencies": {
+      "axios": "^1.6.7",
+      "dotenv": "^16.3.1",
+      "joi": "^17.11.0"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "eslint": "^8.56.0",
+      "prettier": "^3.2.4"
+    }
+  }
